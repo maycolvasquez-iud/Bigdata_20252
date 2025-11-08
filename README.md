@@ -71,4 +71,3 @@ Los resultados del análisis incluyen:
 ---
 
 **Nota:** Este proyecto forma parte de la evaluación de la asignatura Big Data del Grupo 61.
-
