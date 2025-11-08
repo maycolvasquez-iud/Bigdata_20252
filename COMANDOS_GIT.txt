@@ -1,0 +1,39 @@
+INSTRUCCIONES PARA SUBIR EL PROYECTO A GITHUB
+===============================================
+
+OPCIÓN 1: Usar el script de PowerShell (recomendado)
+-----------------------------------------------------
+1. Abrir PowerShell en el directorio del proyecto
+2. Ejecutar: .\subir_a_github.ps1
+
+OPCIÓN 2: Comandos manuales
+----------------------------
+1. Inicializar el repositorio Git:
+   git init
+
+2. Agregar el remoto de GitHub:
+   git remote add origin https://github.com/maycolvasquez-iud/Bigdata_20252.git
+
+3. Agregar todos los archivos:
+   git add .
+
+4. Crear el commit inicial:
+   git commit -m "Initial commit: Evidencia de Aprendizaje 1 - Base de datos analítica para diabetes"
+
+5. Renombrar la rama a main:
+   git branch -M main
+
+6. Subir al repositorio:
+   git push -u origin main
+
+NOTAS IMPORTANTES:
+------------------
+- Asegúrate de tener Git instalado y configurado
+- Si es tu primera vez, configura tu usuario:
+  git config --global user.name "Tu Nombre"
+  git config --global user.email "tu.email@ejemplo.com"
+- Si GitHub te pide autenticación, puedes usar:
+  - Personal Access Token (recomendado)
+  - GitHub CLI (gh auth login)
+
+
