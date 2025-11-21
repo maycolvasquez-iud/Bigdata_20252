@@ -289,12 +289,18 @@ El proyecto implementa un esquema optimizado utilizando **Delta Lake** con las s
 ## 📁 Estructura del Proyecto
 
 ```
-.
+│
+├── src/
+│   ├── images/
+│   │   ├── DER.png          # Diagrama Entidad-Relación
+│   │   ├── variables.png    # Diagrama de variables
+│   │   ├── Crearcluster.png    # Imágenes de evidencia
+│   │   └── Crearcluster2.png   # Imágenes de evidencia
+│   └── static_csv/
+│       └── Diabetes_and_LifeStyle_Dataset .csv  # Dataset principal
+│
+├── Vasquez_Maycol_Actividad_1.ipynb  # Notebook principal con el análisis
 ├── Vasquez_Maycol_Actividad_2.ipynb    # Notebook principal con el análisis
-├── Diabetes_and_LifeStyle_Dataset.csv  # Dataset de trabajo
-├── Imagenes/                            # Imágenes de evidencia
-│   ├── Crearcluster.png
-│   └── Crearcluster2.png
 └── README.md                            # Este archivo
 ```
 
