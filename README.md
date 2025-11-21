@@ -243,3 +243,111 @@ Este proyecto es de carácter académico y forma parte de la evaluación de la a
 ---
 
 **Nota:** Este proyecto forma parte de la evaluación de la asignatura Big Data del Grupo 61 de la IUDIGITAL.
+
+************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+
+# Actividad 2: Procesamiento de Datos en una Infraestructura Cloud
+
+## 📋 Descripción
+
+Este proyecto corresponde a la **Evidencia de aprendizaje 2** del curso de Big Data, enfocado en el procesamiento de datos utilizando infraestructura cloud. El proyecto implementa un esquema de almacenamiento optimizado para análisis de datos relacionados con factores de salud, estilo de vida y diagnóstico de diabetes.
+
+## 👤 Autor
+
+**Maycol Alejandro Vasquez Casas**  
+Grupo 61 - Big Data
+
+## 📊 Dataset
+
+El proyecto utiliza el dataset `Diabetes_and_LifeStyle_Dataset.csv`, que contiene información sobre:
+
+- **Datos demográficos**: Edad, género, etnia
+- **Datos socioeconómicos**: Nivel de educación, ingresos, estado de empleo
+- **Estilo de vida**: Tabaquismo, consumo de alcohol, actividad física, dieta, sueño, tiempo frente a pantalla
+- **Historial médico**: Historial familiar de diabetes, hipertensión, enfermedades cardiovasculares
+- **Mediciones clínicas**: BMI, presión arterial, colesterol, glucosa, HbA1c, insulina
+- **Variable objetivo**: Diagnóstico de diabetes (`diagnosed_diabetes`)
+
+## 🏗️ Arquitectura y Tecnologías
+
+### Tecnologías Utilizadas
+
+- **Apache Spark**: Motor de procesamiento distribuido
+- **Spark SQL**: Para consultas y transformaciones de datos
+- **Delta Lake**: Formato de almacenamiento transaccional (ACID)
+- **Databricks**: Plataforma cloud para análisis de big data
+
+### Esquema de Almacenamiento
+
+El proyecto implementa un esquema optimizado utilizando **Delta Lake** con las siguientes características:
+
+- **Transaccionalidad ACID**: Garantiza consistencia de datos
+- **Optimización de consultas**: Mejora el rendimiento analítico
+- **Versionado**: Permite auditoría y viaje en el tiempo (time travel)
+- **Esquema forzado**: Validación de tipos de datos al cargar
+
+## 📁 Estructura del Proyecto
+
+```
+.
+├── Vasquez_Maycol_Actividad_2.ipynb    # Notebook principal con el análisis
+├── Diabetes_and_LifeStyle_Dataset.csv  # Dataset de trabajo
+├── Imagenes/                            # Imágenes de evidencia
+│   ├── Crearcluster.png
+│   └── Crearcluster2.png
+└── README.md                            # Este archivo
+```
+
+## 🔧 Características Principales
+
+### 1. Diseño del Esquema de Almacenamiento
+
+- Diccionario de datos completo con 31 columnas
+- Tipos de datos optimizados para Spark SQL
+- Categorización de variables (Demográfica, Socioeconómica, Estilo de Vida, etc.)
+- DDL propuesto para tabla Delta Lake
+
+### 2. Procesamiento de Datos
+
+- Carga y transformación de datos en formato Delta
+- Validación de esquema y tipos de datos
+- Optimización de almacenamiento y rendimiento
+
+## 📝 Uso
+
+1. Abrir el notebook `Vasquez_Maycol_Actividad_2.ipynb` en Databricks
+2. Asegurarse de tener acceso al dataset `Diabetes_and_LifeStyle_Dataset.csv`
+3. Ejecutar las celdas en orden para:
+   - Crear el esquema de la tabla Delta
+   - Cargar y procesar los datos
+   - Realizar análisis y transformaciones
+
+## 📚 Diccionario de Datos
+
+El dataset contiene las siguientes categorías de variables:
+
+| Categoría | Variables |
+|-----------|-----------|
+| **Demográfica** | Age, gender, ethnicity |
+| **Socioeconómica** | education_level, income_level, employment_status |
+| **Estilo de Vida** | smoking_status, alcohol_consumption_per_week, physical_activity_minutes_per_week, diet_score, sleep_hours_per_day, screen_time_hours_per_day |
+| **Historial Médico** | family_history_diabetes, hypertension_history, cardiovascular_history |
+| **Bioquímico/Clínico** | bmi, waist_to_hip_ratio, systolic_bp, diastolic_bp, heart_rate, cholesterol_total, hdl_cholesterol, ldl_cholesterol, triglycerides, glucose_fasting, glucose_postprandial, insulin_level, hba1c |
+| **Resultado** | diabetes_risk_score, diabetes_stage, diagnosed_diabetes |
+
+## 🎯 Objetivos del Proyecto
+
+- Diseñar un esquema de almacenamiento optimizado para análisis de big data
+- Implementar procesamiento de datos en infraestructura cloud
+- Utilizar tecnologías modernas como Delta Lake para garantizar calidad y rendimiento
+- Aplicar mejores prácticas en el manejo de datos estructurados
+
+## 📄 Licencia
+
+Este proyecto es parte de una actividad académica del curso de Big Data.
+
+---
+
+**Nota**: Este proyecto requiere acceso a una plataforma Databricks para su ejecución completa.
+
+
