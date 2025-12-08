@@ -1,3 +1,34 @@
+# Actividad 3 – Diabetes y Estilo de Vida con Spark
+
+Notebook de análisis y transformación de un dataset de diabetes utilizando PySpark/Databricks. Se generan columnas temporales sintéticas, se normalizan textos, se eliminan outliers en `bmi`, se crea una tabla agregada mensual y se producen visualizaciones básicas.
+
+## Contenido del repositorio
+- `Vasquez_Maycol_Actividad_3.ipynb`: notebook principal con todo el flujo de trabajo.
+- `README.md`: este documento.
+
+## Requisitos
+- Entorno con Spark (Databricks o PySpark local).
+- Dataset `Diabetes_and_LifeStyle_Dataset.csv`. El notebook apunta a la ruta `"/Volumes/workspace/default/actividad2/Diabetes_and_LifeStyle_Dataset.csv"`; ajusta `file_path` según tu ubicación.
+- Python 3.x con las librerías usadas en el notebook (`pyspark`, `pandas`, `matplotlib`, `seaborn`).
+
+## Cómo ejecutar
+1. Abre `Vasquez_Maycol_Actividad_3.ipynb` en tu entorno Spark.
+2. Actualiza la variable `file_path` para que apunte al CSV local.
+3. Ejecuta las celdas en orden. El notebook crea una vista temporal `diabetes_transformed` y una tabla Delta `resumen_mensual_diabetes`.
+4. Las visualizaciones convierten datos a pandas; si usas un clúster remoto, asegúrate de que la salida gráfica esté habilitada.
+
+## Flujo resumido
+- **Carga y preparación**: lectura del CSV y generación de fechas consecutivas desde 2023-01-01 para derivar año, mes, día y nombre del día.
+- **Limpieza**: normalización de textos (`gender`, `education_level`) y filtrado de outliers de `bmi` con rango intercuartil (IQR).
+- **Agregación**: cálculo mensual de registros, promedios de `bmi` y `hba1c`, y conteo de casos de diabetes (`resumen_mensual_diabetes`).
+- **Visualización**: tendencias mensuales de casos y boxplot de `bmi` por día de la semana a partir de muestras convertidas a pandas.
+
+## Notas
+- Las advertencias sobre particiones provienen de operaciones sin `partitionBy`; para grandes volúmenes considera particionar o ajustar `Window`.
+- Si `seaborn` muestra advertencias de paleta, puede ajustarse usando `hue` o `legend=False` según la versión instalada.
+
+
+
 # Evidencia de Aprendizaje 1 - Creación de una base de datos analítica
 
 ## Información del Proyecto
