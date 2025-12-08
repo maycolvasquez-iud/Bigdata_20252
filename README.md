@@ -1,5 +1,12 @@
 # Actividad 3 – Diabetes y Estilo de Vida con Spark
 
+## Información del Proyecto
+
+**Estudiante:** Maycol Alejandro Vasquez Casas  
+**Asignatura:** Big Data  
+**Grupo:** 61  
+**Actividad:** Proyecto Integrador
+
 Notebook de análisis y transformación de un dataset de diabetes utilizando PySpark/Databricks. Se generan columnas temporales sintéticas, se normalizan textos, se eliminan outliers en `bmi`, se crea una tabla agregada mensual y se producen visualizaciones básicas.
 
 ## Contenido del repositorio
