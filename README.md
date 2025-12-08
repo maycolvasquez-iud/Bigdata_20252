@@ -7,6 +7,8 @@
 **Grupo:** 61  
 **Actividad:** Proyecto Integrador
 
+**Link al video explicativo de la actividad** https://www.loom.com/share/c59ae988ceef48b7b380f27a3c38b349
+
 Notebook de análisis y transformación de un dataset de diabetes utilizando PySpark/Databricks. Se generan columnas temporales sintéticas, se normalizan textos, se eliminan outliers en `bmi`, se crea una tabla agregada mensual y se producen visualizaciones básicas.
 
 ## Contenido del repositorio
